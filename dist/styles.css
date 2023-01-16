@@ -1,3 +1,85 @@
-div {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --background-red: rgb(199, 0, 0);
+}
+
+div, p, h1, h2, h3,
+h4, h5, h6, button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    font-size: 30px;
+    background-color: var(--background-red);
+    border: 2px solid black;
+}
+
+.menu {
+    margin-top: 64px;
+    margin-left: 36vh;
+    margin-right: 36vh;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: bisque;
+}
+
+.section-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 128px;
+    border-bottom: 1px solid black;
+}
+
+.section-button {
+    height: 64px;
+    width: 128px;
+    background-color: var(--background-red);
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.section-button:active {
+    background-color: red;
+}
+
+.menu-choices {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.menu-choice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.food-name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.food-description {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.food-picture {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    height: 256px;
+    width: 256px;
 }
