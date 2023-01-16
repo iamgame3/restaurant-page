@@ -1,1 +1,3 @@
-console.log("YO!!");
+import pageSetup from "./page-setup.js";
+
+pageSetup;
