@@ -1,10 +1,6 @@
-import pageSetup from "./page-setup";
 import chickenSkewerPicSrc from "./imgs/entrees/chicken-skewer.jpg";
 import meatballsPicSrc from "./imgs/entrees/meatballs.jpg";
 import calamariPicSrc from "./imgs/entrees/calamari.png";
-
-// Get initial page set up
-pageSetup;
 
 const entreesSetup = () => {
   // Select the content div which contains all of the page's contents
@@ -35,6 +31,10 @@ const entreesSetup = () => {
   chickenSkewer.appendChild(chickenSkewerDescription);
   chickenSkewerPic.src = chickenSkewerPicSrc;
   chickenSkewerPic.classList.add("food-picture");
+  chickenSkewerPic.setAttribute(
+    "alt",
+    "Five chicken skewers laid out across a baking sheet."
+  );
   chickenSkewer.appendChild(chickenSkewerPic);
   menuChoices.appendChild(chickenSkewer);
   // Create meatballs section and add it to the menu
@@ -52,6 +52,10 @@ const entreesSetup = () => {
   meatballs.appendChild(meatballsDescription);
   meatballsPic.src = meatballsPicSrc;
   meatballsPic.classList.add("food-picture");
+  meatballsPic.setAttribute(
+    "alt",
+    "Plate of large meatballs towered on top of each other covered in marinara sauce and sprinkled with Parmesan cheese."
+  );
   meatballs.appendChild(meatballsPic);
   menuChoices.appendChild(meatballs);
   // Create calamari section and add it to the menu
@@ -69,8 +73,12 @@ const entreesSetup = () => {
   calamari.appendChild(calamariDescription);
   calamariPic.src = calamariPicSrc;
   calamariPic.classList.add("food-picture");
+  calamariPic.setAttribute(
+    "alt",
+    "Small plate of calamari rings with a lemon slice and a small container of mayonnaise on the side."
+  );
   calamari.appendChild(calamariPic);
   menuChoices.appendChild(calamari);
 };
 
-export default entreesSetup();
+export default entreesSetup;

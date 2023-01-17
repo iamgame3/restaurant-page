@@ -18,6 +18,9 @@ const pageSetup = () => {
   const entreesButton = document.createElement("button");
   const mainMealsButton = document.createElement("button");
   const desertsButton = document.createElement("button");
+  entreesButton.setAttribute("id", "entrees-button");
+  mainMealsButton.setAttribute("id", "main-meals-button");
+  desertsButton.setAttribute("id", "deserts-button");
   entreesButton.textContent = "Entrées";
   mainMealsButton.textContent = "Main Meals";
   desertsButton.textContent = "Deserts";
@@ -29,4 +32,4 @@ const pageSetup = () => {
   });
 };
 
-export default pageSetup();
+export default pageSetup;
