@@ -1,6 +1,7 @@
 import pageSetup from "./page-setup";
 import entreesSetup from "./entrees";
 import mainMealsSetup from "./main-meals";
+import desertsSetup from "./deserts";
 
 const content = document.getElementById("content");
 content.replaceChildren();
@@ -25,6 +26,10 @@ const resetPage = () => {
     resetPage();
     mainMealsSetup();
   });
+  desertsButton.addEventListener("click", () => {
+    resetPage();
+    desertsSetup();
+  });
 };
 
 entreesButton.addEventListener("click", () => {
@@ -34,4 +39,8 @@ entreesButton.addEventListener("click", () => {
 mainMealsButton.addEventListener("click", () => {
   resetPage();
   mainMealsSetup();
+});
+desertsButton.addEventListener("click", () => {
+  resetPage();
+  desertsSetup();
 });
