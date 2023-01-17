@@ -37,6 +37,7 @@ const entreesSetup = () => {
   );
   chickenSkewer.appendChild(chickenSkewerPic);
   menuChoices.appendChild(chickenSkewer);
+
   // Create meatballs section and add it to the menu
   const meatballs = document.createElement("div");
   const meatballsTitle = document.createElement("h1");
@@ -58,6 +59,7 @@ const entreesSetup = () => {
   );
   meatballs.appendChild(meatballsPic);
   menuChoices.appendChild(meatballs);
+
   // Create calamari section and add it to the menu
   const calamari = document.createElement("div");
   const calamariTitle = document.createElement("h1");
