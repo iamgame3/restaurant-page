@@ -17,14 +17,14 @@ const pageSetup = () => {
   // Create menu selection buttons and add them to the section selection
   const entreesButton = document.createElement("button");
   const mainMealsButton = document.createElement("button");
-  const desertsButton = document.createElement("button");
+  const dessertsButton = document.createElement("button");
   entreesButton.setAttribute("id", "entrees-button");
   mainMealsButton.setAttribute("id", "main-meals-button");
-  desertsButton.setAttribute("id", "deserts-button");
+  dessertsButton.setAttribute("id", "desserts-button");
   entreesButton.textContent = "Entrées";
   mainMealsButton.textContent = "Main Meals";
-  desertsButton.textContent = "Deserts";
-  const menuButtons = [entreesButton, mainMealsButton, desertsButton];
+  dessertsButton.textContent = "Desserts";
+  const menuButtons = [entreesButton, mainMealsButton, dessertsButton];
   menuButtons.forEach((button) => {
     button.classList.add("section-button");
     button.classList.add("secton-button:active");

@@ -1,7 +1,7 @@
-import meatPlatterPicSrc from "./imgs/deserts/meat-platter.png";
-import pulledPorkPicSrc from "./imgs/deserts/pulled-pork.jpeg";
+import meatPlatterPicSrc from "./imgs/desserts/meat-platter.png";
+import pulledPorkPicSrc from "./imgs/desserts/pulled-pork.jpeg";
 
-const desertsSetup = () => {
+const dessertsSetup = () => {
   // Select the content div which contains all of the page's contents
   const content = document.getElementById("content");
 
@@ -57,4 +57,4 @@ const desertsSetup = () => {
   menuChoices.appendChild(pulledPork);
 };
 
-export default desertsSetup;
+export default dessertsSetup;
