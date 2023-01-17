@@ -1,3 +1,3 @@
-import pageSetup from "./page-setup.js";
+import entreesSetup from "./entrees.js";
 
-pageSetup;
+entreesSetup;
