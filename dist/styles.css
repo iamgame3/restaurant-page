@@ -76,7 +76,8 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
-.food-name, .food-description {
+.food-name,
+.food-description {
   display: flex;
   justify-content: center;
   align-items: center;
